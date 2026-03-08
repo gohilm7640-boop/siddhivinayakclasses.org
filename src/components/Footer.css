@@ -1,0 +1,217 @@
+/* Footer */
+.footer {
+    background: #030712;
+    color: #CBD5E1;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 200px;
+    background: radial-gradient(ellipse at center, rgba(78, 135, 255, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* ── Inner Layout ── */
+.footer__inner {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 80px;
+    padding-top: 72px;
+    padding-bottom: 56px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .footer__inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 56px;
+    }
+}
+
+/* ── Brand / Left Column ── */
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__logo-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #4E87FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(78, 135, 255, 0.4);
+}
+
+.footer__logo-mark span {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+}
+
+.footer__logo-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+}
+
+.footer__logo-sub {
+    font-size: 0.7rem;
+    color: #64748B;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.footer__tagline {
+    font-size: 0.875rem;
+    color: #64748B;
+    line-height: 1.75;
+}
+
+.footer__subjects {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.footer__subject-tag {
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 0.04em;
+    color: var(--subj-color, #4E87FF);
+    border: 1px solid currentColor;
+    opacity: 0.75;
+}
+
+.footer__social {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94A3B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.footer__social-btn:hover {
+    background: rgba(78, 135, 255, 0.25);
+    color: #4E87FF;
+    border-color: rgba(78, 135, 255, 0.4);
+}
+
+/* ── Links / Right Columns ── */
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 600px) {
+    .footer__links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__col-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.footer__link {
+    font-size: 0.875rem;
+    color: #64748B;
+    transition: color 0.2s ease;
+    line-height: 1.4;
+}
+
+.footer__link:hover {
+    color: #4E87FF;
+}
+
+.footer__contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #64748B;
+    line-height: 1.4;
+}
+
+.footer__contact-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #4E87FF;
+}
+
+/* ── Bottom Bar ── */
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 20px 0;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    /* ensures wrapping on smaller screens */
+}
+
+.footer__copy {
+    font-size: 0.85rem;
+    color: #94A3B8;
+    /* Lighter color for better visibility against dark footer */
+    flex: 1 1 auto;
+    min-width: 250px;
+}
+
+.footer__bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: #475569;
+}

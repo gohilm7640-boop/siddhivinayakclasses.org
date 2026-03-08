@@ -1,0 +1,56 @@
+.stats-section {
+    background: linear-gradient(135deg, rgba(78, 135, 255, 0.04) 0%, rgba(139, 92, 246, 0.03) 100%);
+    border-top: 1px solid rgba(229, 231, 235, 0.6);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.6);
+    padding: 64px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+.stat-card {
+    position: relative;
+    padding: 28px 24px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.stat-card__accent {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    border-radius: 0 0 99px 99px;
+}
+
+.stat-card__value {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1;
+    margin: 12px 0 8px;
+}
+
+.stat-card__label {
+    font-size: 0.875rem;
+    color: #64748B;
+    font-weight: 500;
+}
