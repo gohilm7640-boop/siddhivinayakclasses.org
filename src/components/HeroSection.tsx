@@ -1,13 +1,9 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Zap, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { ArrowRight, Zap } from 'lucide-react'
 import './HeroSection.css'
 
-const floatCards = [
-    { icon: '🎯', label: 'IIT-JEE', sub: '2024 Results', color: '#4E87FF' },
-    { icon: '🏆', label: '98.7%', sub: 'Pass Rate', color: '#8B5CF6' },
-    { icon: '⚡', label: '500+', sub: 'IIT Selections', color: '#EF4444' },
-]
+
 
 export default function HeroSection() {
     return (
@@ -58,33 +54,11 @@ export default function HeroSection() {
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
                         <Link to="/contact" className="btn btn-primary hero__cta">
-                            Start Learning Free <ArrowRight size={18} />
-                        </Link>
-                        <Link to="/courses" className="btn btn-outline">
-                            Explore Courses
+                            Contact for Admission <ArrowRight size={18} />
                         </Link>
                     </motion.div>
 
-                    <motion.div
-                        className="hero__trust"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5, duration: 0.6 }}
-                    >
-                        <div className="hero__avatars">
-                            {['A', 'B', 'C', 'D', 'E'].map((c, i) => (
-                                <div key={c} className="hero__avatar" style={{ background: ['#4E87FF', '#8B5CF6', '#EF4444', '#00B4D8', '#10B981'][i] }}>
-                                    {c}
-                                </div>
-                            ))}
-                        </div>
-                        <p className="hero__trust-text">
-                            <strong>10,000+</strong> students already enrolled
-                            <span className="hero__stars">
-                                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={12} fill="#FBBF24" color="#FBBF24" />)}
-                            </span>
-                        </p>
-                    </motion.div>
+
                 </div>
 
                 {/* Hero Visual */}
@@ -122,7 +96,6 @@ export default function HeroSection() {
                                 {[
                                     { label: 'Concepts Mastered', pct: 78, color: '#4E87FF' },
                                     { label: 'Practice Problems', pct: 92, color: '#8B5CF6' },
-                                    { label: 'Mock Tests Attempted', pct: 65, color: '#10B981' },
                                 ].map(p => (
                                     <div key={p.label} className="hero__progress-row">
                                         <span>{p.label}</span>
@@ -142,25 +115,7 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    {/* Floating Chips */}
-                    {floatCards.map((card, i) => (
-                        <motion.div
-                            key={card.label}
-                            className="hero__float-chip"
-                            style={{
-                                top: `${[15, 55, 80][i]}%`,
-                                [i % 2 === 0 ? 'right' : 'left']: i === 2 ? '10%' : '-8%',
-                            } as React.CSSProperties}
-                            animate={{ y: [0, -8, 0] }}
-                            transition={{ repeat: Infinity, duration: 3 + i, ease: 'easeInOut', delay: i * 0.8 }}
-                        >
-                            <span style={{ fontSize: '1.25rem' }}>{card.icon}</span>
-                            <div>
-                                <p className="hero__float-chip-label" style={{ color: card.color }}>{card.label}</p>
-                                <p className="hero__float-chip-sub">{card.sub}</p>
-                            </div>
-                        </motion.div>
-                    ))}
+
                 </motion.div>
             </div>
 

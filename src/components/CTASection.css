@@ -1,5 +1,8 @@
 .cta-section {
-    background: #F8FAFC;
+    background: var(--bg);
+    padding-bottom: var(--section-pad);
+    position: relative;
+    z-index: 10;
 }
 
 .cta-card {

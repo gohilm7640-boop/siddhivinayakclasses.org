@@ -46,9 +46,9 @@ export default function AboutPage() {
                 <div className="container page-hero__inner">
                     <Section>
                         <span className="text-label" style={{ color: '#4E87FF' }}>Our Story</span>
-                        <h1 className="text-display page-hero__title">About <span className="gradient-text">SSV Academy</span></h1>
+                        <h1 className="text-display page-hero__title">About <span className="gradient-text">Siddhivinayak Classes</span></h1>
                         <p className="page-hero__sub">
-                            For over 15 years, SSV Academy has been the trusted partner for thousands of JEE aspirants across India.
+                            For over 15 years, Siddhivinayak Classes has been the trusted partner for thousands of JEE aspirants across India.
                             Our mission is simple: turn every student's IIT dream into reality through exceptional teaching.
                         </p>
                     </Section>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                                 Democratizing World-Class<br />JEE Coaching
                             </h2>
                             <p style={{ color: '#475569', lineHeight: 1.8, fontSize: '1.05rem', marginBottom: 16 }}>
-                                SSV Academy was founded with the belief that every student who dreams of IIT deserves access to the highest quality coaching—regardless of geography or economic background.
+                                Siddhivinayak Classes was founded with the belief that every student who dreams of IIT deserves access to the highest quality coaching—regardless of geography or economic background.
                             </p>
                             <p style={{ color: '#475569', lineHeight: 1.8, fontSize: '1.05rem' }}>
                                 Through our mobile app and online platform, we've made IIT-caliber teaching available to students from Kanyakumari to Kashmir. Our faculty comprises IIT alumni who are not just subject matter experts, but also passionate mentors.

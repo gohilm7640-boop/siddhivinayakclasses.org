@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { ArrowRight, Sparkles } from 'lucide-react'
 import './CTASection.css'
 
 export default function CTASection() {
@@ -47,7 +47,6 @@ export default function CTASection() {
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
                         >
-                            Join thousands of successful students who achieved their IIT dreams with SSV.
                             Get started with a free demo class today.
                         </motion.p>
 
@@ -59,10 +58,7 @@ export default function CTASection() {
                             transition={{ delay: 0.5 }}
                         >
                             <Link to="/contact" className="btn cta-card__btn-primary">
-                                Book Free Demo <ArrowRight size={18} />
-                            </Link>
-                            <Link to="/courses" className="btn cta-card__btn-outline">
-                                View Courses
+                                Contact for Admission <ArrowRight size={18} />
                             </Link>
                         </motion.div>
                     </div>

@@ -6,8 +6,6 @@ import './Navbar.css'
 
 const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Courses', path: '/courses' },
     { label: 'Contact', path: '/contact' },
 ]
 
@@ -37,12 +35,10 @@ export default function Navbar() {
                 <div className="container navbar__inner">
                     {/* Logo */}
                     <Link to="/" className="navbar__logo">
-                        <div className="navbar__logo-mark">
-                            <span>S</span>
-                        </div>
+                        <img src="/logo.jpg" alt="Logo" style={{ width: 44, height: 44, borderRadius: 12, objectFit: 'cover' }} />
                         <div className="navbar__logo-text">
-                            <span className="navbar__logo-title">SSV</span>
-                            <span className="navbar__logo-sub">Academy</span>
+                            <span className="navbar__logo-title">Siddhivinayak</span>
+                            <span className="navbar__logo-sub">Classes</span>
                         </div>
                     </Link>
 
@@ -62,11 +58,10 @@ export default function Navbar() {
                         ))}
                     </nav>
 
-                    {/* CTA */}
                     <div className="navbar__cta hide-mobile">
-                        <a href="/contact" className="btn btn-primary" style={{ padding: '10px 22px', fontSize: '0.875rem' }}>
-                            Join SSV →
-                        </a>
+                        <Link to="/contact" className="btn btn-primary" style={{ padding: '10px 22px', fontSize: '0.875rem' }}>
+                            Contact for Admission →
+                        </Link>
                     </div>
 
                     {/* Mobile Hamburger */}
@@ -107,8 +102,8 @@ export default function Navbar() {
                                 </motion.div>
                             ))}
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-                                <Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '16px' }}>
-                                    Join SSV →
+                                <Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '16px' }} onClick={() => setMobileOpen(false)}>
+                                    Contact for Admission →
                                 </Link>
                             </motion.div>
                         </nav>

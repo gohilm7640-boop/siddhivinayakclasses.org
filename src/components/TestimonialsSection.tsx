@@ -10,7 +10,7 @@ const testimonials = [
         subject: 'Physics',
         color: '#EF4444',
         initial: 'A',
-        text: 'SSV transformed my understanding of Physics completely. The concepts that seemed complex were broken down so clearly. I couldn\'t have cracked IIT without this team!',
+        text: 'Siddhivinayak transformed my understanding of Physics completely. The concepts that seemed complex were broken down so clearly. I couldn\'t have cracked IIT without this team!',
         rating: 5,
     },
     {
@@ -19,7 +19,7 @@ const testimonials = [
         subject: 'Chemistry',
         color: '#00B4D8',
         initial: 'P',
-        text: 'The organic chemistry notes from SSV are absolutely brilliant. The faculty explains reaction mechanisms with such depth that I could solve any question in the exam hall.',
+        text: 'The organic chemistry notes from Siddhivinayak are absolutely brilliant. The faculty explains reaction mechanisms with such depth that I could solve any question in the exam hall.',
         rating: 5,
     },
     {
@@ -28,7 +28,7 @@ const testimonials = [
         subject: 'Mathematics',
         color: '#8B5CF6',
         initial: 'R',
-        text: 'Maths used to scare me before SSV. The step-by-step approach to calculus and coordinate geometry made everything click. Eternally grateful to the SSV faculty!',
+        text: 'Maths used to scare me before Siddhivinayak. The step-by-step approach to calculus and coordinate geometry made everything click. Eternally grateful to the Siddhivinayak faculty!',
         rating: 5,
     },
     {
@@ -37,7 +37,7 @@ const testimonials = [
         subject: 'Physics',
         color: '#EF4444',
         initial: 'D',
-        text: 'The mock tests at SSV are the best JEE preparation I could ask for. The analytics helped me identify weak areas and focus better. Highly recommend SSV to all JEE aspirants!',
+        text: 'The practice modules at Siddhivinayak are the best JEE preparation I could ask for. The analytics helped me identify weak areas and focus better. Highly recommend Siddhivinayak to all JEE aspirants!',
         rating: 5,
     },
 ]

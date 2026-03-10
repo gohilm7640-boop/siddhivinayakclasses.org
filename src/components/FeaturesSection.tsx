@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Video, Download, Brain, BarChart2, MessageCircle, Shield } from 'lucide-react'
+import { Video, Download, Brain, BarChart2 } from 'lucide-react'
 import './FeaturesSection.css'
 
 const features = [
@@ -28,18 +28,6 @@ const features = [
         desc: 'Detailed performance dashboards tracking your improvement across every topic over time.',
         color: '#00B4D8',
     },
-    {
-        icon: <MessageCircle size={22} />,
-        title: 'Live Doubt Sessions',
-        desc: 'Daily doubt-clearing sessions with expert mentors to remove every roadblock quickly.',
-        color: '#10B981',
-    },
-    {
-        icon: <Shield size={22} />,
-        title: 'Mock Tests & Analysis',
-        desc: 'Full-length JEE-pattern mock tests with deep performance analysis and rank prediction.',
-        color: '#F97316',
-    },
 ]
 
 export default function FeaturesSection() {
@@ -55,7 +43,7 @@ export default function FeaturesSection() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
-                    <span className="text-label" style={{ color: '#8B5CF6' }}>Why SSV</span>
+                    <span className="text-label" style={{ color: '#8B5CF6' }}>Why Siddhivinayak</span>
                     <h2 className="text-h1" style={{ marginTop: 10 }}>
                         Everything You Need to <span className="gradient-text">Succeed</span>
                     </h2>

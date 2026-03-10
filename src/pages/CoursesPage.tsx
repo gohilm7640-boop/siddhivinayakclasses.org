@@ -43,7 +43,6 @@ const included = [
     'PDF Notes & Formulas',
     'Chapter-wise Practice Sets',
     'Weekly Live Sessions',
-    'Monthly Mock Tests',
     'Performance Analytics',
     'Doubt Clearing Sessions',
     'Progress Tracking',

@@ -1,9 +1,9 @@
-/* Footer */
 .footer {
     background: #030712;
     color: #CBD5E1;
     position: relative;
     overflow: hidden;
+    padding-top: var(--section-pad);
 }
 
 .footer__glow {
@@ -19,12 +19,14 @@
 
 /* ── Inner Layout ── */
 .footer__inner {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 80px;
-    padding-top: 72px;
+    padding-top: 0;
     padding-bottom: 56px;
     align-items: start;
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 900px) {
@@ -45,7 +47,7 @@
 .footer__logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 .footer__logo-mark {
@@ -69,10 +71,11 @@
 
 .footer__logo-title {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     color: white;
-    line-height: 1.1;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .footer__logo-sub {
@@ -90,8 +93,9 @@
 
 .footer__subjects {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer__subject-tag {
@@ -104,6 +108,10 @@
     color: var(--subj-color, #4E87FF);
     border: 1px solid currentColor;
     opacity: 0.75;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
 }
 
 .footer__social {
@@ -132,9 +140,8 @@
 
 /* ── Links / Right Columns ── */
 .footer__links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (max-width: 600px) {

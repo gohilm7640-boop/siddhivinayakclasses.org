@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react'
+import { Twitter, Instagram, Youtube, Phone, MapPin } from 'lucide-react'
 import './Footer.css'
 
 const subjects = [
@@ -8,12 +8,6 @@ const subjects = [
     { name: 'Mathematics', color: '#8B5CF6' },
 ]
 
-const quickLinks = [
-    { label: 'Home', path: '/' },
-    { label: 'About Us', path: '/about' },
-    { label: 'Courses', path: '/courses' },
-    { label: 'Contact', path: '/contact' },
-]
 
 const socialLinks = [
     { icon: <Instagram size={18} />, href: '#', label: 'Instagram' },
@@ -28,9 +22,9 @@ export default function Footer() {
             <div className="container footer__inner">
                 <div className="footer__brand">
                     <div className="footer__logo">
-                        <div className="footer__logo-mark"><span>S</span></div>
+                        <img src="/logo.jpg" alt="Logo" style={{ width: 44, height: 44, borderRadius: 12, objectFit: 'cover' }} />
                         <div>
-                            <p className="footer__logo-title">SSV Academy</p>
+                            <p className="footer__logo-title">Siddhivinayak Classes</p>
                             <p className="footer__logo-sub">JEE Coaching Excellence</p>
                         </div>
                     </div>
@@ -55,25 +49,7 @@ export default function Footer() {
 
                 <div className="footer__links">
                     <div className="footer__col">
-                        <h4 className="footer__col-title">Quick Links</h4>
-                        {quickLinks.map(l => (
-                            <Link key={l.path} to={l.path} className="footer__link">{l.label}</Link>
-                        ))}
-                    </div>
-                    <div className="footer__col">
-                        <h4 className="footer__col-title">Subjects</h4>
-                        {subjects.map(s => (
-                            <a key={s.name} href="/courses" className="footer__link">{s.name}</a>
-                        ))}
-                        <a href="/courses" className="footer__link">JEE Main</a>
-                        <a href="/courses" className="footer__link">JEE Advanced</a>
-                    </div>
-                    <div className="footer__col">
                         <h4 className="footer__col-title">Contact</h4>
-                        <div className="footer__contact-item">
-                            <Mail size={14} />
-                            <span>hello@ssvacademy.in</span>
-                        </div>
                         <div className="footer__contact-item">
                             <Phone size={14} />
                             <span>+91 98765 43210</span>
@@ -89,12 +65,16 @@ export default function Footer() {
             <div className="footer__bottom">
                 <div className="container footer__bottom-inner">
                     <p className="footer__copy">
-                        © 2026 SSV Academy. All rights reserved. | Designed by <a href="https://uimitra.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Uimitra</a>
+                        © 2026 Siddhivinayak Classes. All rights reserved. | Designed by <a href="https://uimitra.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Uimitra</a>
                     </p>
                     <div className="footer__bottom-links">
-                        <a href="#" className="footer__link">Privacy Policy</a>
+                        <Link to="/privacy" className="footer__link">Privacy Policy</Link>
                         <span className="footer__bottom-divider">•</span>
-                        <a href="#" className="footer__link">Terms of Service</a>
+                        <Link to="/terms" className="footer__link">Terms of Service</Link>
+                        <span className="footer__bottom-divider">•</span>
+                        <Link to="/refund" className="footer__link">Refund Policy</Link>
+                        <span className="footer__bottom-divider">•</span>
+                        <Link to="/delivery" className="footer__link">Delivery Policy</Link>
                     </div>
                 </div>
             </div>
