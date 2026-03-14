@@ -3,6 +3,7 @@
     padding-bottom: var(--section-pad);
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
 
 .cta-card {
@@ -106,6 +107,10 @@
 
 @media (max-width: 768px) {
     .cta-card {
-        padding: 56px 28px;
+        padding: 48px 24px;
+    }
+
+    .cta-card__title {
+        font-size: 1.75rem;
     }
 }

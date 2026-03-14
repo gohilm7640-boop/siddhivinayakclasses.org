@@ -19,16 +19,16 @@
 }
 
 .page-hero__blob--blue {
-    width: 500px;
-    height: 500px;
+    width: min(500px, 90vw);
+    height: min(500px, 90vw);
     background: radial-gradient(circle, rgba(78, 135, 255, 0.12) 0%, transparent 70%);
     top: -100px;
     right: -100px;
 }
 
 .page-hero__blob--purple {
-    width: 350px;
-    height: 350px;
+    width: min(350px, 70vw);
+    height: min(350px, 70vw);
     background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
     bottom: -50px;
     left: 10%;
@@ -58,7 +58,7 @@
     align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .about-mission {
         grid-template-columns: 1fr;
         gap: 48px;
@@ -100,7 +100,7 @@
     gap: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .about-values {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -156,7 +156,7 @@
     gap: 24px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .about-team {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -215,7 +215,7 @@
     gap: 24px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .courses-grid {
         grid-template-columns: 1fr;
         max-width: 480px;
@@ -335,7 +335,7 @@
     align-items: start;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .contact-layout {
         grid-template-columns: 1fr;
     }
@@ -471,4 +471,23 @@
     background: #2563EB;
     transform: translateY(-1px);
     box-shadow: 0 8px 25px rgba(78, 135, 255, 0.4);
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+@media (max-width: 1024px) {
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
 }

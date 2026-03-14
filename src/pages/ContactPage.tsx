@@ -46,7 +46,7 @@ export default function ContactPage() {
             {/* Info Cards */}
             <section className="section" style={{ background: 'white', paddingBottom: 0 }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, marginBottom: 64 }}>
+                    <div className="contact-cards-grid">
                         {contactCards.map((c, i) => (
                             <Section key={c.title} delay={i * 0.08}>
                                 <div className="contact-info-card" style={{ flexDirection: 'column', gap: 12, borderRadius: 20, padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>

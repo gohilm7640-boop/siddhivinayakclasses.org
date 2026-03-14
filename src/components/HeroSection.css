@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     padding-top: 90px;
+    max-width: 100%;
 }
 
 /* Background Blobs */
@@ -18,8 +19,8 @@
 }
 
 .hero__blob--blue {
-    width: 600px;
-    height: 600px;
+    width: min(600px, 90vw);
+    height: min(600px, 90vw);
     background: radial-gradient(circle, rgba(78, 135, 255, 0.15) 0%, transparent 70%);
     top: -100px;
     right: -100px;
@@ -27,8 +28,8 @@
 }
 
 .hero__blob--purple {
-    width: 400px;
-    height: 400px;
+    width: min(400px, 70vw);
+    height: min(400px, 70vw);
     background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
     bottom: 0;
     left: 20%;
@@ -70,7 +71,7 @@
     padding-bottom: 80px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__inner {
         grid-template-columns: 1fr;
         gap: 56px;
@@ -92,7 +93,7 @@
     margin-bottom: 36px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__sub {
         margin: 0 auto 36px;
     }
@@ -105,7 +106,7 @@
     margin-bottom: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__actions {
         justify-content: center;
     }
@@ -123,7 +124,7 @@
     gap: 16px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__trust {
         justify-content: center;
     }
@@ -176,7 +177,7 @@
     height: 520px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__visual {
         height: 380px;
     }
@@ -190,7 +191,7 @@
     transform: translateY(-50%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero__card {
         position: relative;
         top: auto;
@@ -302,6 +303,12 @@
     color: #94A3B8;
     line-height: 1;
     margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .hero__float-chip {
+        display: none;
+    }
 }
 
 /* Scroll Indicator */
