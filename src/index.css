@@ -83,7 +83,10 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
+
 
 a {
   text-decoration: none;

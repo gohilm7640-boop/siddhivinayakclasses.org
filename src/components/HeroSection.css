@@ -74,10 +74,13 @@
 @media (max-width: 768px) {
     .hero__inner {
         grid-template-columns: 1fr;
-        gap: 56px;
+        gap: 32px;
         text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
+
 
 /* Content */
 .hero__title {
@@ -95,9 +98,16 @@
 
 @media (max-width: 768px) {
     .hero__sub {
+        font-size: 1rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-break: break-word;
         margin: 0 auto 36px;
     }
 }
+
 
 .hero__actions {
     display: flex;
@@ -179,9 +189,11 @@
 
 @media (max-width: 768px) {
     .hero__visual {
-        height: 380px;
+        height: auto;
+        min-height: 280px;
     }
 }
+
 
 .hero__card {
     position: absolute;
@@ -213,7 +225,21 @@
 .hero__subjects {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+    .hero__subjects {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero__subject-chip {
+        flex: unset;
+        width: 100%;
+    }
+}
+
 
 .hero__subject-chip {
     flex: 1;
