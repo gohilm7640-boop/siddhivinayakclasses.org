@@ -41,7 +41,12 @@ export default function Footer() {
 					<span>
 						© {new Date().getFullYear()} {site.name}
 					</span>
-					<span>{site.tagline}</span>
+					<span>
+						Designed by{' '}
+						<a href="https://uimitra.com" target="_blank" rel="noopener noreferrer" className="footer__credit">
+							Uimitra
+						</a>
+					</span>
 				</div>
 			</div>
 		</footer>

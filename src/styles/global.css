@@ -1991,6 +1991,16 @@ ol {
 	color: var(--on-navy-muted);
 }
 
+.footer__credit {
+	color: #fff;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.footer__credit:hover {
+	color: var(--gold);
+}
+
 @media (max-width: 760px) {
 	.footer__top {
 		grid-template-columns: 1fr 1fr;
