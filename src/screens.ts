@@ -12,7 +12,7 @@ export const screens = {
 	notes: { src: '/screens/notes.webp', alt: 'Notes screen listing Physics and Chemistry PDFs for Standard 12' },
 	pdf: { src: '/screens/pdf.webp', alt: 'A Physics PDF open in the app with a Download PDF button' },
 	progress: { src: '/screens/progress.webp', alt: 'My progress screen: share of lessons watched, minutes this week and progress per subject' },
-	assistant: { src: '/screens/assistant-typed.webp', alt: 'Study assistant screen with suggested questions and "Why is F = ma?" typed in' },
+	assistant: { src: '/screens/assistant-empty.webp', alt: 'Study assistant screen asking what you are studying, with suggested questions to try' },
 	redeem: { src: '/screens/redeem-filled.webp', alt: 'Redeem SSV code screen with a class code entered' },
 	locked: { src: '/screens/learner-course-locked.webp', alt: 'A course page for a learner with a Buy course button and a link to redeem an SSV code' },
 	adminMenu: { src: '/screens/admin-menu.webp', alt: 'Admin console menu: dashboard, courses, notes library, students, registration codes, reviews, purchases and settings', bar: NAVY },
