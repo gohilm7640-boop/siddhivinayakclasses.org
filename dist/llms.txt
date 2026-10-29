@@ -1,0 +1,30 @@
+# Shree Siddhivinayak Classes (SSV Classes)
+
+> Shree Siddhivinayak Classes (SSV) is a coaching class in Gujarat, India, teaching Physics, Chemistry and Maths for Standards 11 and 12: the Gujarat board (GSEB), GUJCET and NEET. Its tagline is "Learn it once. Learn it right." The SSV app brings the class's own video lessons, notes and progress tracking to Android and iPhone. The app is coming soon to Google Play and the App Store; it is not published on the stores yet.
+
+## Key facts
+
+- Subjects: Physics, Chemistry, Mathematics.
+- Standards: 11 and 12. Exams: GSEB board exams, GUJCET, NEET.
+- Every video and note is made by SSV's own teachers.
+- Courses are organised chapter by chapter, with theory videos, concept boosters, NEET daily practice problems, solved previous-year papers (NEET, GUJCET, GSEB) and downloadable notes/PDFs.
+- SSV classroom students unlock paid courses and notes with a class code from the SSV office.
+- Other learners can use free lessons and buy individual courses or PDFs with a one-time payment through Razorpay (UPI, cards, net banking).
+- The app also includes progress tracking (lessons watched, weekly study minutes, per-subject progress) and a study assistant that explains doubts step by step.
+- SSV staff manage courses, notes, class codes and students from an admin console in the same app.
+- Contact: contact@siddhivinayakclasses.org
+- Intro film: https://www.youtube.com/watch?v=Ol2yXqqePA0
+
+## Pages
+
+- [Home](https://siddhivinayakclasses.org/): overview of the class and the SSV app, intro film, FAQ
+- [Courses](https://siddhivinayakclasses.org/courses): standards, subjects, how a course is built, who can access what
+- [About](https://siddhivinayakclasses.org/about): why SSV built the app, the teachers, how SSV teaches
+- [Contact](https://siddhivinayakclasses.org/contact): admissions, class codes, payments
+
+## Policies
+
+- [Privacy policy](https://siddhivinayakclasses.org/privacy)
+- [Terms of use](https://siddhivinayakclasses.org/terms)
+- [Cancellation and refund policy](https://siddhivinayakclasses.org/refund)
+- [Delivery policy](https://siddhivinayakclasses.org/delivery)
