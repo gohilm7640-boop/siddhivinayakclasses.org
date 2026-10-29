@@ -1352,6 +1352,14 @@ ol {
 	max-width: 40em;
 }
 
+/* the heading stays beside the questions on desktop; on phones it would cover them */
+@media (min-width: 861px) {
+	.faq__head {
+		position: sticky;
+		top: calc(var(--header-h) + 32px);
+	}
+}
+
 @media (max-width: 860px) {
 	.faq {
 		grid-template-columns: 1fr;

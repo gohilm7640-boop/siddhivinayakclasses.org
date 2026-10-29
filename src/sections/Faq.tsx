@@ -38,7 +38,7 @@ export default function Faq() {
 	return (
 		<section className="section" aria-labelledby="faq-title">
 			<div className="container faq">
-				<div className="section-head" style={{ position: 'sticky', top: 'calc(var(--header-h) + 32px)' }}>
+				<div className="section-head faq__head">
 					<span className="overline">FAQ</span>
 					<MaskedLines as="h2" id="faq-title" className="h2" inView lines={['Questions.']} />
 					<p className="lede">
