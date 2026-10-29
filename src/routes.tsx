@@ -14,7 +14,7 @@ export const routes: RouteDef[] = [
 		path: '/',
 		title: 'Shree Siddhivinayak Classes | Physics, Chemistry & Maths for Std 11 & 12',
 		description:
-			'Physics, Chemistry and Maths for Standards 11 and 12 (GSEB, GUJCET, NEET) from Shree Siddhivinayak Classes. Video lessons, notes and progress tracking in the SSV app for Android and iPhone.',
+			'Physics, Chemistry and Maths for Standards 11 and 12 (GSEB, GUJCET, NEET) from Shree Siddhivinayak Classes. The SSV app has video lessons, notes and progress tracking for Android and iPhone.',
 		element: <Home />,
 	},
 	{
@@ -26,7 +26,7 @@ export const routes: RouteDef[] = [
 	{
 		path: '/about',
 		title: 'About | Shree Siddhivinayak Classes',
-		description: 'Shree Siddhivinayak Classes teaches Physics, Chemistry and Maths for Standards 11 and 12. Meet the teachers behind the SSV app and how they teach.',
+		description: 'Shree Siddhivinayak Classes teaches Physics, Chemistry and Maths for Standards 11 and 12. Read about the teachers behind the SSV app and how they teach.',
 		element: <About />,
 	},
 	{

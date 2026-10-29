@@ -30,7 +30,7 @@ export default function Admin() {
 					<span className="overline">For SSV teachers</span>
 					<MaskedLines as="h2" id="admin-title" className="h2" inView lines={['Run the whole class', 'from one dashboard.']} />
 					<Reveal>
-						<p className="lede">The same app has an admin console for the SSV team. Courses, notes, class codes and students are all managed from a phone.</p>
+						<p className="lede">The same app has an admin console for the SSV team, so courses, notes, class codes and students are managed from a phone.</p>
 					</Reveal>
 					<Reveal delay={0.1}>
 						<ul className="check-list">

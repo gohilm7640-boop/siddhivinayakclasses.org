@@ -19,7 +19,7 @@ export default function About() {
 					</span>
 					<WordReveal
 						className="statement"
-						text="A lesson heard once in class is easy to forget. So we recorded ours, chapter by chapter, and put them next to the notes and past papers that go with them. Now every student can go back to the exact moment it clicked."
+						text="A lesson heard once in class is easy to forget, so we recorded ours chapter by chapter and put them next to the notes and past papers that go with them. Students can go back to any lesson when they revise."
 					/>
 				</div>
 			</section>
@@ -28,7 +28,7 @@ export default function About() {
 				<div className="container">
 					<div className="section-head">
 						<span className="overline">Teachers</span>
-						<MaskedLines as="h2" id="teachers-title" className="h2" inView lines={['The faces behind', 'every lesson.']} />
+						<MaskedLines as="h2" id="teachers-title" className="h2" inView lines={['Our teachers.']} />
 						<p className="lede">Every video in the SSV app is taught by the same teachers students meet in our classroom.</p>
 					</div>
 					<div className="teachers">

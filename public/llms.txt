@@ -2,7 +2,7 @@
 
 > Shree Siddhivinayak Classes (SSV) is a coaching class in Gujarat, India, teaching Physics, Chemistry and Maths for Standards 11 and 12: the Gujarat board (GSEB), GUJCET and NEET. Its tagline is "Learn it once. Learn it right." The SSV app brings the class's own video lessons, notes and progress tracking to Android and iPhone. The app is coming soon to Google Play and the App Store; it is not published on the stores yet.
 
-## Key facts
+## Facts
 
 - Subjects: Physics, Chemistry, Mathematics.
 - Standards: 11 and 12. Exams: GSEB board exams, GUJCET, NEET.

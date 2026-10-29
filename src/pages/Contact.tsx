@@ -79,8 +79,8 @@ function MessageForm() {
 export default function Contact() {
 	return (
 		<>
-			<PageHero overline="Contact" lines={['Talk to', <span key="b">the <span className="accent">class.</span></span>]}>
-				<p className="lede">Admissions, class codes, courses or a payment question. Write to us and the SSV team will reply.</p>
+			<PageHero overline="Contact" lines={['Contact', <span key="b"><span className="accent">SSV.</span></span>]}>
+				<p className="lede">Write to us about admissions, class codes, courses or a payment, and the SSV team will reply.</p>
 			</PageHero>
 			<section className="section--tight" style={{ paddingTop: 0 }}>
 				<div className="container contact">
@@ -116,7 +116,7 @@ export default function Contact() {
 						<div className="contact-line">
 							<span className="overline">Payments</span>
 							<p className="muted">
-								For a refund or a payment that didn’t unlock a course, include your registered email and the Razorpay payment ID. See the <Link className="text-link" to="/refund">refund policy</Link>.
+								For a refund or a payment that didn't unlock a course, include your registered email and the Razorpay payment ID. See the <Link className="text-link" to="/refund">refund policy</Link>.
 							</p>
 						</div>
 					</Reveal>

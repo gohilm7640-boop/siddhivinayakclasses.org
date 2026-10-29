@@ -27,7 +27,7 @@ export default function Cta() {
 						Contact the class <ArrowRight size={18} />
 					</Link>
 					<a href={`mailto:${site.email}?subject=Tell%20me%20when%20the%20SSV%20app%20is%20out`} className="btn btn--ghost-light">
-						<Mail size={18} aria-hidden="true" /> Tell me when it’s out
+						<Mail size={18} aria-hidden="true" /> Tell me when it's out
 					</a>
 				</Reveal>
 			</div>

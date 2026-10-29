@@ -5,7 +5,7 @@ import { MaskedLines } from '../components/Reveal';
 import { site } from '../site';
 
 const VIDEO_ID = 'Ol2yXqqePA0';
-const TITLE = 'Siddhivinayak Classes App: Std 11 & 12 Physics, Chemistry and Maths on your phone';
+const TITLE = 'SSV Classes app launch film';
 
 /**
  * The SSV launch film. Shows our own poster until the viewer presses play, then loads the
@@ -24,19 +24,20 @@ export default function IntroFilm() {
 			<div className="container">
 				<div className="film__head">
 					<span className="overline">Watch the film</span>
-					<MaskedLines as="h2" id="film-title" className="h2" inView lines={['One minute.', <span key="b">The whole <span className="accent">app.</span></span>]} />
+					<MaskedLines as="h2" id="film-title" className="h2" inView lines={[<span key="a">The app in <span className="accent">one minute.</span></span>]} />
 				</div>
 				<motion.div ref={ref} className="film__frame" style={{ scale, borderRadius: radius }}>
 					{playing ? (
 						<iframe
 							src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+							loading="lazy"
 							title={TITLE}
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
 						/>
 					) : (
-						<button className="film__poster" onClick={() => setPlaying(true)} aria-label={`Play video: ${TITLE}`}>
+						<button className="film__poster" onClick={() => setPlaying(true)} aria-label="Play the SSV Classes app launch film">
 							<img src="/brand/intro-poster.webp" alt="" width={1600} height={900} loading="lazy" decoding="async" />
 							<span className="film__play" aria-hidden="true">
 								<Play size={30} fill="currentColor" strokeWidth={0} />

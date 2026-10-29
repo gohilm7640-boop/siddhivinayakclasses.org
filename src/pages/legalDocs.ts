@@ -12,7 +12,7 @@ const contact = `Email ${site.email}. We reply on working days.`;
 export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', LegalDoc> = {
 	privacy: {
 		title: 'Privacy policy',
-		intro: `This policy explains what personal data ${site.name} (“SSV”, “we”) collects through this website and the SSV app, why, and what you can do about it.`,
+		intro: `This policy explains what personal data ${site.name} ("SSV", "we") collects through this website and the SSV app, why, and what you can do about it.`,
 		sections: [
 			{
 				title: 'This website',
@@ -79,7 +79,7 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 	},
 	terms: {
 		title: 'Terms of use',
-		intro: `These terms apply to this website, the SSV app and the courses of ${site.name} (“SSV”, “we”). By using them you agree to these terms.`,
+		intro: `These terms apply to this website, the SSV app and the courses of ${site.name} ("SSV", "we"). By using them you agree to these terms.`,
 		sections: [
 			{
 				title: 'Your account',
@@ -97,7 +97,7 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 				title: 'How you may use the content',
 				body: 'You get a personal, non-commercial licence to watch and read course material in the app. It is a licence, not a transfer of ownership. You may not:',
 				bullets: [
-					'Copy, record, download (other than through the app’s own download button), share or resell videos or notes',
+					'Copy, record, download (other than through the app\'s own download button), share or resell videos or notes',
 					'Share your account or class code',
 					'Try to get around how access is controlled',
 				],
@@ -143,7 +143,7 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 			},
 			{
 				title: 'How refunds are paid',
-				body: 'Approved refunds are processed within 5–7 working days to the original payment method (UPI, card or net banking). Your bank may take a few more days to show the amount.',
+				body: 'Approved refunds are processed within 5 to 7 working days to the original payment method (UPI, card or net banking). Your bank may take a few more days to show the amount.',
 			},
 			{
 				title: 'How to ask',
@@ -165,7 +165,7 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 			},
 			{
 				title: 'Printed material',
-				body: 'Where a classroom course includes printed study material, students collect it at the SSV centre. Any courier delivery to a remote student is dispatched within 3–5 working days and usually arrives within 5–7 working days, depending on the PIN code. Shipping is included in the fee unless a separate charge is shown before you pay.',
+				body: 'Where a classroom course includes printed study material, students collect it at the SSV centre. Any courier delivery to a remote student is dispatched within 3 to 5 working days and usually arrives within 5 to 7 working days, depending on the PIN code. Shipping is included in the fee unless a separate charge is shown before you pay.',
 			},
 			{ title: 'Problems with delivery', body: contact },
 		],

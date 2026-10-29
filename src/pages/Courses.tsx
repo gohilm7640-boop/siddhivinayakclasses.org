@@ -8,15 +8,15 @@ import Cta from '../sections/Cta';
 import { contentTypes, subjects } from '../site';
 
 const standards = [
-	{ num: '11', title: 'Standard 11', body: 'The foundation year. Every idea that Standard 12 and the entrance exams lean on, built carefully from the start.' },
-	{ num: '12', title: 'Standard 12', body: 'Board exam year. The full syllabus for GSEB, with the GUJCET and NEET questions that test it.' },
+	{ num: '11', title: 'Standard 11', body: 'Standard 12 and the entrance exams build on what you learn this year.' },
+	{ num: '12', title: 'Standard 12', body: 'The GSEB board exam year. Courses cover the syllabus along with GUJCET and NEET past-paper questions.' },
 ];
 
 export default function Courses() {
 	return (
 		<>
 			<PageHero overline="Courses" lines={['Physics, Chemistry', <span key="m">and <span className="accent">Maths.</span></span>]}>
-				<p className="lede">For Standards 11 and 12. Taught chapter by chapter by the teachers of Shree Siddhivinayak Classes, for the Gujarat board, GUJCET and NEET.</p>
+				<p className="lede">Courses for Standards 11 and 12, taught chapter by chapter by the teachers of Shree Siddhivinayak Classes for the Gujarat board, GUJCET and NEET.</p>
 			</PageHero>
 
 			<section className="section--tight" aria-labelledby="standards-title">
@@ -40,7 +40,7 @@ export default function Courses() {
 				<div className="container">
 					<div className="section-head">
 						<span className="overline">Subjects</span>
-						<MaskedLines as="h2" id="subjects-heading" className="h2" inView lines={['One teacher', 'for each subject.']} />
+						<MaskedLines as="h2" id="subjects-heading" className="h2" inView lines={['The subjects.']} />
 					</div>
 					<div className="grid-3">
 						{subjects.map((s, i) => (
@@ -64,7 +64,7 @@ export default function Courses() {
 					<div>
 						<div className="section-head" style={{ marginBottom: 40 }}>
 							<span className="overline">Inside a course</span>
-							<MaskedLines as="h2" id="built-title" className="h2" inView lines={['How every course', 'is built.']} />
+							<MaskedLines as="h2" id="built-title" className="h2" inView lines={['How a course', 'is organised.']} />
 							<p className="lede">A course is one topic, split into chapters. Inside each chapter, lessons are grouped by type so you can learn, then practise.</p>
 						</div>
 						<Reveal>
@@ -89,7 +89,7 @@ export default function Courses() {
 				<div className="container">
 					<div className="section-head">
 						<span className="overline">Access</span>
-						<MaskedLines as="h2" id="access-title" className="h2" inView lines={['Who gets what.']} />
+						<MaskedLines as="h2" id="access-title" className="h2" inView lines={['Who can open what.']} />
 						<p className="lede">Course prices are shown in the app before you pay. Payments are one-time, through Razorpay.</p>
 					</div>
 					<Reveal className="table-wrap">

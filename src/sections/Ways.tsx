@@ -11,16 +11,16 @@ const ways = [
 		tab: 'SSV student',
 		title: 'Unlock everything with your class code.',
 		body: 'Students of Shree Siddhivinayak Classes get a class code from the SSV office. Enter it once, and every paid course and note for your standard opens up.',
-		points: ['One code, every subject', 'Courses for your standard, 11 or 12', 'Ask at the office if you don’t have one'],
+		points: ['One code covers every subject', 'You see the courses for your standard, 11 or 12', "Ask at the office if you don't have one"],
 		screen: screens.redeem,
 		kind: 'ios' as const,
 	},
 	{
 		id: 'learner',
 		tab: 'Everyone else',
-		title: 'Start free. Buy only what you need.',
-		body: 'Not in our classroom? Free lessons are open to everyone with an account. Buy any course or set of notes on its own, paid securely through Razorpay.',
-		points: ['UPI, cards and net banking', 'Unlocks as soon as payment goes through', 'No subscription'],
+		title: 'Start with the free lessons, then buy what you need.',
+		body: "If you don't study at SSV, you can still create an account and watch the free lessons. Each course or set of notes is a one-time purchase through Razorpay.",
+		points: ['Pay by UPI, card or net banking', 'The course opens once the payment goes through', 'There is no subscription'],
 		screen: screens.locked,
 		kind: 'android' as const,
 	},
@@ -46,7 +46,7 @@ export default function Ways() {
 				<div>
 					<div className="section-head" style={{ marginBottom: 36 }}>
 						<span className="overline">Access</span>
-						<MaskedLines as="h2" id="ways-title" className="h2" inView lines={['One app.', 'Two ways in.']} />
+						<MaskedLines as="h2" id="ways-title" className="h2" inView lines={['Two ways', 'to get access.']} />
 					</div>
 					<div className="segmented" role="tablist" aria-label="Who are you?" onKeyDown={onKey}>
 						{ways.map((w, i) => (

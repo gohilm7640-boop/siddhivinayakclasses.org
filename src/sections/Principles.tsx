@@ -3,9 +3,9 @@ import { MaskedLines, Reveal } from '../components/Reveal';
 import { site } from '../site';
 
 const principles = [
-	{ title: 'Chapter by chapter', body: 'Nothing skipped and nothing out of order. Each topic builds on the one before it, the way the syllabus is meant to be learnt.', art: <StepsArt /> },
+	{ title: 'Chapter by chapter', body: 'Chapters follow the order of the syllabus, and each topic builds on the one before it.', art: <StepsArt /> },
 	{ title: 'Concept first, then questions', body: 'Understand why it works, then practise it on real previous-year questions from the boards, GUJCET and NEET.', art: <WaveArt /> },
-	{ title: 'Made by SSV', body: 'Every video and every note is made by our own teachers. No borrowed lectures, no content from other platforms.', art: <Atom still label="" /> },
+	{ title: 'Made by SSV', body: 'Our own teachers make every video and note in the app.', art: <Atom still label="" /> },
 ];
 
 export default function Principles() {
@@ -13,8 +13,8 @@ export default function Principles() {
 		<section className="section section--white" aria-labelledby="principles-title">
 			<div className="container">
 				<div className="section-head">
-					<span className="overline">How SSV teaches</span>
-					<MaskedLines as="h2" id="principles-title" className="h2" inView lines={['The classroom method,', 'now on every phone.']} />
+					<span className="overline">Teaching</span>
+					<MaskedLines as="h2" id="principles-title" className="h2" inView lines={['How SSV teaches.']} />
 				</div>
 				<div className="principles">
 					{principles.map((p, i) => (

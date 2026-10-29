@@ -14,7 +14,7 @@ export const faqs = [
 		a: 'No. SSV students get a class code from the office. Enter it when you sign up, or later from your profile, and the paid courses and notes for your standard unlock for the period set by SSV.',
 	},
 	{
-		q: 'I don’t study at SSV. Can I still use it?',
+		q: "I don't study at SSV. Can I still use it?",
 		a: 'Yes. Create an account to open the free lessons, then buy any course or set of notes you need. Each purchase is a one-time payment through Razorpay.',
 	},
 	{
@@ -38,10 +38,10 @@ export default function Faq() {
 		<section className="section" aria-labelledby="faq-title">
 			<div className="container faq">
 				<div className="section-head" style={{ position: 'sticky', top: 'calc(var(--header-h) + 32px)' }}>
-					<span className="overline">Questions</span>
-					<MaskedLines as="h2" id="faq-title" className="h2" inView lines={['Good to know.']} />
+					<span className="overline">FAQ</span>
+					<MaskedLines as="h2" id="faq-title" className="h2" inView lines={['Questions.']} />
 					<p className="lede">
-						Something else? <Link to="/contact" className="text-link">Ask us</Link>
+						<Link to="/contact" className="text-link">Ask us</Link> about anything else.
 					</p>
 				</div>
 				<div className="faq__list">

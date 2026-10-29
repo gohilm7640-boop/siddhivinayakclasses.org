@@ -27,7 +27,7 @@ export const subjects = [
 		mark: 'Ph',
 		color: '#0B5FE0',
 		image: '/teachers/physics.webp',
-		line: 'Motion, forces, waves and fields, drawn out until the formula feels obvious.',
+		line: 'Motion, forces, waves and fields, explained with diagrams until the formula makes sense.',
 	},
 	{
 		key: 'chemistry',
@@ -35,7 +35,7 @@ export const subjects = [
 		mark: 'Ch',
 		color: '#0E7490',
 		image: '/teachers/chemistry.webp',
-		line: 'Atoms, bonds and reactions, with the reasoning behind every equation you balance.',
+		line: 'Atomic structure, bonding and reactions, with the reasoning behind each equation you balance.',
 	},
 	{
 		key: 'maths',
@@ -43,7 +43,7 @@ export const subjects = [
 		mark: 'Ma',
 		color: '#1E3A8A',
 		image: '/teachers/maths.webp',
-		line: 'Functions, calculus and algebra, worked step by step until you can do them alone.',
+		line: 'Calculus and algebra worked step by step, until you can solve the problems on your own.',
 	},
 ] as const;
 

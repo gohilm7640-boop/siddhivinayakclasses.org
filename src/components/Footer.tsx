@@ -11,7 +11,7 @@ export default function Footer() {
 							<img src="/brand/logo-256.webp" alt="" width={36} height={36} loading="lazy" />
 							<span>{site.name}</span>
 						</Link>
-						<p>Physics, Chemistry and Maths for Standards 11 and 12. GSEB boards, GUJCET and NEET. The SSV app is coming soon to Android and iPhone.</p>
+						<p>Physics, Chemistry and Maths for Standards 11 and 12, for GSEB boards, GUJCET and NEET. The SSV app is coming soon to Android and iPhone.</p>
 					</div>
 					<div className="footer__col">
 						<h2>Site</h2>

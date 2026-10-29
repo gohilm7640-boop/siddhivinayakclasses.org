@@ -8,36 +8,36 @@ type Step = { title: string; body: string; points: string[]; screen: Screen; kin
 
 const steps: Step[] = [
 	{
-		title: 'Every chapter, in order.',
-		body: 'Courses follow your standard and subject. Each chapter holds its theory videos, concept boosters and solved past papers, so you always know what comes next.',
+		title: 'Courses follow the syllabus.',
+		body: 'Courses are listed for your standard and subject. Each chapter has its theory videos, concept boosters and solved past papers, so you can see what comes next.',
 		points: ['Filter by Physics, Chemistry or Maths', 'Theory, concept boosters, NEET, GUJCET and GSEB papers'],
 		screen: screens.courses,
 		kind: 'ios',
 	},
 	{
 		title: 'Lessons from your own teachers.',
-		body: 'The same teachers you meet in class, recorded chapter by chapter. Pause, rewind and rewatch the hard parts as often as you need.',
-		points: ['Pick up where you stopped', 'Short lessons that fit between classes'],
+		body: 'The videos are recorded by the teachers you meet in class. You can pause on a hard part and watch it again as often as you need.',
+		points: ['Continue where you stopped from the home screen', 'Chapter PDFs sit next to the videos'],
 		screen: screens.player,
 		kind: 'ios',
 	},
 	{
-		title: 'Read it. Download it. Revise it.',
-		body: 'Formula sheets, study notes and question sets open right inside the app. Save any PDF to your phone for revision before the test.',
+		title: 'Notes and PDFs open in the app.',
+		body: 'Formula sheets, study notes and question sets open inside the app, and you can save any PDF to your phone for revision before a test.',
 		points: ['Notes grouped by subject and chapter', 'Downloads stay on your device'],
 		screen: screens.pdf,
 		kind: 'ios',
 	},
 	{
-		title: 'See where you stand.',
-		body: 'Lessons finished, minutes studied this week and how far you are in each subject, on one screen. Small daily steps you can actually see.',
+		title: 'Your progress on one screen.',
+		body: 'The progress screen shows the lessons you have finished, the minutes you studied this week and how far you are in each subject.',
 		points: ['Weekly study minutes', 'Progress ring for every subject'],
 		screen: screens.progress,
 		kind: 'ios',
 	},
 	{
-		title: 'Stuck? Ask a doubt.',
-		body: 'The study assistant explains Physics, Chemistry and Maths questions step by step, at any hour. For anything important, your teacher is one class away.',
+		title: 'Ask a doubt at any hour.',
+		body: 'The study assistant explains Physics, Chemistry and Maths questions step by step. Its answers can be wrong, so check important points with your teacher.',
 		points: ['Step-by-step explanations', 'Suggested questions to get you started'],
 		screen: screens.assistant,
 		kind: 'ios',
@@ -80,7 +80,7 @@ export default function Story() {
 			<div className="container">
 				<div className="section-head">
 					<span className="overline">Inside the SSV app</span>
-					<MaskedLines as="h2" id="app-title" className="h2" inView lines={['Everything from class,', 'in your pocket.']} />
+					<MaskedLines as="h2" id="app-title" className="h2" inView lines={["What's in", 'the SSV app.']} />
 				</div>
 				<div ref={ref} className="story">
 					<div className="story__device">

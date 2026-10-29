@@ -24,7 +24,7 @@ export default function Subjects() {
 			<div className="container">
 				<div className="section-head">
 					<span className="overline">What we teach</span>
-					<MaskedLines as="h2" id="subjects-title" className="h2" inView lines={['Three subjects.', 'Taught properly.']} />
+					<MaskedLines as="h2" id="subjects-title" className="h2" inView lines={['Three subjects,', 'taught chapter by chapter.']} />
 				</div>
 				<div
 					className="subject-list"

@@ -46,7 +46,7 @@ export default function Hero() {
 						]}
 					/>
 					<motion.p className="lede" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.35, ease }}>
-						Physics, Chemistry and Maths from the teachers of Shree Siddhivinayak Classes. Every chapter as video lessons, notes and solved past papers, in one app for Android and iPhone.
+						Physics, Chemistry and Maths lessons from the teachers of Shree Siddhivinayak Classes. The SSV app puts each chapter's videos, notes and solved past papers on your phone.
 					</motion.p>
 					<motion.div className="btn-row" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.45, ease }}>
 						<a href="#app" className="btn">
@@ -57,7 +57,7 @@ export default function Hero() {
 						</Link>
 					</motion.div>
 					<motion.p className="hero__note" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.6 }}>
-						<Smartphone size={18} aria-hidden="true" /> Coming soon to Google Play and the App Store.
+						<Smartphone size={18} aria-hidden="true" /> The app is coming soon to Google Play and the App Store.
 					</motion.p>
 				</motion.div>
 
