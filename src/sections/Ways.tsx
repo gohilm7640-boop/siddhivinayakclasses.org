@@ -4,6 +4,7 @@ import { useRef, useState, type KeyboardEvent } from 'react';
 import Phone from '../components/Phone';
 import { MaskedLines } from '../components/Reveal';
 import { screens } from '../screens';
+import { play } from '../sound';
 
 const ways = [
 	{
@@ -32,11 +33,15 @@ export default function Ways() {
 	const [active, setActive] = useState(0);
 	const tabs = useRef<(HTMLButtonElement | null)[]>([]);
 	const way = ways[active]!;
+	const choose = (i: number) => {
+		if (i !== active) play('click');
+		setActive(i);
+	};
 
 	const onKey = (e: KeyboardEvent) => {
 		if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
 		const next = (active + (e.key === 'ArrowRight' ? 1 : ways.length - 1)) % ways.length;
-		setActive(next);
+		choose(next);
 		tabs.current[next]?.focus();
 	};
 
@@ -60,7 +65,7 @@ export default function Ways() {
 								aria-selected={i === active}
 								aria-controls="way-panel"
 								tabIndex={i === active ? 0 : -1}
-								onClick={() => setActive(i)}
+								onClick={() => choose(i)}
 							>
 								{i === active && <motion.span layoutId="way-thumb" className="segmented__thumb" transition={{ type: 'spring', stiffness: 400, damping: 34 }} />}
 								{w.tab}
@@ -96,7 +101,7 @@ export default function Ways() {
 								animate={{ x: front ? '0%' : `${side * 22}%`, scale: front ? 1 : 0.84, opacity: front ? 1 : 0.55, rotate: front ? 0 : side * 6 }}
 								transition={{ duration: 0.7, ease }}
 							>
-								<Phone kind={w.kind} screen={w.screen} style={{ x: '-50%', y: '-50%' }} onClick={() => setActive(i)} />
+								<Phone kind={w.kind} screen={w.screen} style={{ x: '-50%', y: '-50%' }} onClick={() => choose(i)} />
 							</motion.div>
 						);
 					})}

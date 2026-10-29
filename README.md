@@ -37,6 +37,7 @@ Any static host works. Output directory: `dist`. Build command: `npm run build`.
 | Structured data | `src/seo.ts` |
 | Policy text | `src/pages/legalDocs.ts` |
 | App screenshots | `public/screens/*.webp`, listed in `src/screens.ts` |
+| Sound effects (off by default) | `src/sound.ts`, files in `public/sfx/` (CC0, from the launch film kit) |
 | Design tokens | top of `src/styles/global.css`, matching the SSV app theme |
 
 App screens are real captures from the SSV app with demo data. The admin dashboard home screen is left out because it shows revenue.

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Phone, { type Screen } from '../components/Phone';
 import { MaskedLines } from '../components/Reveal';
 import { screens } from '../screens';
+import { play } from '../sound';
 
 type Step = { title: string; body: string; points: string[]; screen: Screen; kind: 'ios' | 'android' };
 
@@ -74,6 +75,12 @@ export default function Story() {
 	const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
 	const tilt = useTransform(scrollYProgress, [0, 0.5, 1], [-6, 0, 6]);
 	const step = steps[active]!;
+	const first = useRef(true);
+	useEffect(() => {
+		// one quiet tick per new step; none for the step shown on load
+		if (first.current) first.current = false;
+		else play('step');
+	}, [active]);
 
 	return (
 		<section id="app" className="section section--white" aria-labelledby="app-title">

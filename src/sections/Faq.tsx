@@ -3,6 +3,7 @@ import { Plus } from 'lucide-react';
 import { useId, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MaskedLines } from '../components/Reveal';
+import { play } from '../sound';
 
 export const faqs = [
 	{
@@ -50,7 +51,10 @@ export default function Faq() {
 						return (
 							<div key={f.q} className="faq__item">
 								<h3 style={{ margin: 0 }}>
-									<button className="faq__q" aria-expanded={isOpen} aria-controls={`${base}-${i}`} id={`${base}-q${i}`} onClick={() => setOpen(isOpen ? null : i)}>
+									<button className="faq__q" aria-expanded={isOpen} aria-controls={`${base}-${i}`} id={`${base}-q${i}`} onClick={() => {
+											play('tick');
+											setOpen(isOpen ? null : i);
+										}}>
 										{f.q}
 										<Plus size={22} aria-hidden="true" />
 									</button>

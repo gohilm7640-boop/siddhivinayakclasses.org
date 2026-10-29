@@ -3,6 +3,7 @@ import { Play } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { MaskedLines } from '../components/Reveal';
 import { site } from '../site';
+import { play } from '../sound';
 
 const VIDEO_ID = 'Ol2yXqqePA0';
 const TITLE = 'SSV Classes app launch film';
@@ -37,7 +38,10 @@ export default function IntroFilm() {
 							allowFullScreen
 						/>
 					) : (
-						<button className="film__poster" onClick={() => setPlaying(true)} aria-label="Play the SSV Classes app launch film">
+						<button className="film__poster" onClick={() => {
+								play('pop');
+								setPlaying(true);
+							}} aria-label="Play the SSV Classes app launch film">
 							<img src="/brand/intro-poster.webp" alt="" width={1600} height={900} loading="lazy" decoding="async" />
 							<span className="film__play" aria-hidden="true">
 								<Play size={30} fill="currentColor" strokeWidth={0} />

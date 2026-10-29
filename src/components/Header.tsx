@@ -1,8 +1,9 @@
 import { AnimatePresence, motion, useMotionValueEvent, useScroll, useSpring } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, Volume2, VolumeX, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { nav, site } from '../site';
+import { setSound, useSound } from '../sound';
 
 export default function Header() {
 	const { scrollY, scrollYProgress } = useScroll();
@@ -12,6 +13,7 @@ export default function Header() {
 	const { pathname } = useLocation();
 	const menuBtn = useRef<HTMLButtonElement>(null);
 	const closeBtn = useRef<HTMLButtonElement>(null);
+	const sound = useSound();
 
 	useMotionValueEvent(scrollY, 'change', (y) => setSolid(y > 12));
 	useEffect(() => setOpen(false), [pathname]);
@@ -45,12 +47,17 @@ export default function Header() {
 							</NavLink>
 						))}
 					</nav>
-					<Link to="/contact" className="btn header__cta">
-						Get a class code
-					</Link>
-					<button ref={menuBtn} className="menu-btn" aria-label="Open menu" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(true)}>
-						<Menu size={24} strokeWidth={1.8} />
-					</button>
+					<div className="header__actions">
+						<button className="sound-btn" aria-pressed={sound} aria-label="Sound effects" title={sound ? 'Sound on' : 'Sound off'} onClick={() => setSound(!sound)}>
+							{sound ? <Volume2 size={20} strokeWidth={1.8} /> : <VolumeX size={20} strokeWidth={1.8} />}
+						</button>
+						<Link to="/contact" className="btn header__cta">
+							Get a class code
+						</Link>
+						<button ref={menuBtn} className="menu-btn" aria-label="Open menu" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(true)}>
+							<Menu size={24} strokeWidth={1.8} />
+						</button>
+					</div>
 				</div>
 			</header>
 			<AnimatePresence>
