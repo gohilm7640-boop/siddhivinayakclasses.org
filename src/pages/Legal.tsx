@@ -21,7 +21,7 @@ export default function Legal({ doc }: { doc: keyof typeof legalDocs }) {
 					</nav>
 					<article className="legal__body">
 						{d.sections.map((s) => (
-							<section key={s.title}>
+							<section key={s.title} id={s.id}>
 								<h2>{s.title}</h2>
 								{s.body && <p>{s.body}</p>}
 								{s.bullets && (

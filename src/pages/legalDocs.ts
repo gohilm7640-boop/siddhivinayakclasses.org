@@ -4,7 +4,7 @@ export type LegalDoc = {
 	title: string;
 	intro: string;
 	/** `link.to` is a site path or a mailto: address */
-	sections: { title: string; body?: string; bullets?: string[]; link?: { to: string; label: string } }[];
+	sections: { id?: string; title: string; body?: string; bullets?: string[]; link?: { to: string; label: string } }[];
 };
 
 const contact = `Email ${site.email}. We reply on working days.`;
@@ -109,6 +109,24 @@ export const legalDocs: Record<'privacy' | 'deleteAccount' | 'terms' | 'refund' 
 			{
 				title: 'What we may keep',
 				body: 'Tax and accounting law requires us to keep records of payments and orders, including Razorpay invoices. We keep these for up to 8 years and, where possible, separate them from the deleted profile.',
+			},
+			{
+				id: 'delete-data',
+				title: 'Delete some of your data without deleting your account',
+				body: 'You can remove some of your data in the app and keep using your account:',
+				bullets: [
+					'Study assistant chats: open the study assistant and tap the trash icon to clear them',
+					'Downloaded PDFs: open Downloads and remove the files you no longer want',
+				],
+			},
+			{
+				title: 'Other data',
+				body: `To remove anything else, such as your progress and watch history, your reviews or the phone number on your profile, email ${site.email} from your registered email address with the subject "Delete my data" and list what to remove. We remove it within 30 days.`,
+				link: { to: `mailto:${site.email}?subject=Delete%20my%20data`, label: 'Email us to delete some of your data' },
+			},
+			{
+				title: 'What stays when you delete only some data',
+				body: 'Your account stays, with your email, name and standard. Payment records that tax law requires us to keep are kept for up to 8 years.',
 			},
 			{ title: 'Questions', body: contact },
 		],
