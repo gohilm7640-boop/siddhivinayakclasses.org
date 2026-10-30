@@ -1,6 +1,11 @@
 import { site } from '../site';
 
-export type LegalDoc = { title: string; intro: string; sections: { title: string; body?: string; bullets?: string[] }[] };
+export type LegalDoc = {
+	title: string;
+	intro: string;
+	/** `link.to` is a site path or a mailto: address */
+	sections: { title: string; body?: string; bullets?: string[]; link?: { to: string; label: string } }[];
+};
 
 const contact = `Email ${site.email}. We reply on working days.`;
 
@@ -9,7 +14,7 @@ const contact = `Email ${site.email}. We reply on working days.`;
  * substance of the policies SSV published with its Razorpay account; change them only
  * when SSV changes the policy itself.
  */
-export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', LegalDoc> = {
+export const legalDocs: Record<'privacy' | 'deleteAccount' | 'terms' | 'refund' | 'delivery', LegalDoc> = {
 	privacy: {
 		title: 'Privacy policy',
 		intro: `This policy explains what personal data ${site.name} ("SSV", "we") collects through this website and the SSV app, why, and what you can do about it.`,
@@ -64,10 +69,11 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 				title: 'Your rights',
 				bullets: [
 					'See and update your details from your profile in the app',
-					'Delete your account from Profile → Delete account, which removes your personal data',
+					'Delete your account from Profile, then Delete account, which removes your personal data',
 					'Opt out of messages from us',
 					`Ask us about your data at ${site.email}`,
 				],
+				link: { to: '/delete-account', label: 'How to delete your account' },
 			},
 			{
 				title: 'Students under 18',
@@ -75,6 +81,36 @@ export const legalDocs: Record<'privacy' | 'terms' | 'refund' | 'delivery', Lega
 			},
 			{ title: 'Changes', body: 'If we change this policy, we will post the new version here and update the date above.' },
 			{ title: 'Contact', body: contact },
+		],
+	},
+	deleteAccount: {
+		title: 'Delete your SSV Classes account',
+		intro: `How to delete your account in the SSV Classes app from ${site.name}, and what happens to your data when you do.`,
+		sections: [
+			{
+				title: 'Delete it in the app',
+				bullets: ['Open the SSV Classes app and sign in', 'Go to Profile', 'Tap Delete account', 'Confirm that you want to delete it'],
+			},
+			{
+				title: 'Delete it without the app',
+				body: `Email ${site.email} from the email address registered on your account, with the subject "Delete my account". Include your Student ID if you know it. We delete the account within 30 days of your request.`,
+				link: { to: `mailto:${site.email}?subject=Delete%20my%20account`, label: 'Email us to delete your account' },
+			},
+			{
+				title: 'What we delete',
+				bullets: [
+					'Your account and sign-in details',
+					'Your profile: name, email, phone number and standard',
+					'Your study progress and your list of downloads',
+					'Your study assistant chat history',
+					'Reviews you have written',
+				],
+			},
+			{
+				title: 'What we may keep',
+				body: 'Tax and accounting law requires us to keep records of payments and orders, including Razorpay invoices. We keep these for up to 8 years and, where possible, separate them from the deleted profile.',
+			},
+			{ title: 'Questions', body: contact },
 		],
 	},
 	terms: {

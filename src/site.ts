@@ -67,6 +67,7 @@ export const nav = [
 
 export const legal = [
 	{ to: '/privacy', label: 'Privacy policy' },
+	{ to: '/delete-account', label: 'Delete account' },
 	{ to: '/terms', label: 'Terms of use' },
 	{ to: '/refund', label: 'Refund policy' },
 	{ to: '/delivery', label: 'Delivery policy' },

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import { legal, site } from '../site';
 import { legalDocs } from './legalDocs';
@@ -30,6 +30,11 @@ export default function Legal({ doc }: { doc: keyof typeof legalDocs }) {
 											<li key={b}>{b}</li>
 										))}
 									</ul>
+								)}
+								{s.link && (
+									<p>
+										{s.link.to.startsWith('/') ? <Link to={s.link.to}>{s.link.label}</Link> : <a href={s.link.to}>{s.link.label}</a>}
+									</p>
 								)}
 							</section>
 						))}

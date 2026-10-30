@@ -36,6 +36,12 @@ export const routes: RouteDef[] = [
 		element: <Contact />,
 	},
 	{ path: '/privacy', title: 'Privacy policy | Shree Siddhivinayak Classes', description: 'How Shree Siddhivinayak Classes collects, uses and protects your data on this website and in the SSV app.', element: <Legal doc="privacy" /> },
+	{
+		path: '/delete-account',
+		title: 'Delete your SSV Classes account | Shree Siddhivinayak Classes',
+		description: 'How to delete your SSV Classes app account, in the app or by email, and which data is deleted or kept.',
+		element: <Legal doc="deleteAccount" />,
+	},
 	{ path: '/terms', title: 'Terms of use | Shree Siddhivinayak Classes', description: 'The terms for using the Shree Siddhivinayak Classes website, the SSV app and its courses.', element: <Legal doc="terms" /> },
 	{ path: '/refund', title: 'Cancellation and refund policy | Shree Siddhivinayak Classes', description: 'When and how you can cancel an SSV course and get a refund.', element: <Legal doc="refund" /> },
 	{ path: '/delivery', title: 'Delivery policy | Shree Siddhivinayak Classes', description: 'How SSV courses and study material are delivered after you pay.', element: <Legal doc="delivery" /> },
